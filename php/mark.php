@@ -5,23 +5,26 @@
 </head>
 <body>
 <?php
-$x=5;
-if ($x<=10) {
-	echo "d";
-	# code...
+
+//numeical
+
+$arrayName = array('a','b');
+
+
+for ($i=0; $i <2 ; $i++) { 
+echo "$arrayName[$i]";
 }
-elseif ($x>=11 && $x<=20) {
-	# code...
-	echo "c";
+
+foreach ($arrayName as $value) {
+	echo $value;
 }
-elseif ($x>=21 && $x<=30) {
-	# code...
-	echo "b";
+
+$i=0;
+while ( $i< 2) {
+echo "$arrayName[$i]";
+$i++;
 }
-else
-{
-	echo "A";
-}
+
 ?>
 </body>
 </html>
