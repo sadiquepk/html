@@ -5,12 +5,16 @@
 </head>
 <body>
 <?php
-$a="sadiq";
-if ($a=="sadiq")
-{
+$x=10;
+if ($x>=10)
+ {
+	echo " greater";# code...
+} 
+else {
+	echo "lesss";
 	# code...
-echo "sadiq";
 }
+
 
 ?>
 </body>
