@@ -8,7 +8,6 @@
 $a="sadiq";
 if ($a=="sadiq")
 {
-	# code...
 echo "sadiq";
 }
 
