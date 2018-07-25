@@ -6,7 +6,7 @@
 <body>
 <?php
 $value;
-$value = 2016;
+$value = 2018;
 echo "enter a year <br>";
 echo "$value <br>";
 if ($value % 4 == 0)
