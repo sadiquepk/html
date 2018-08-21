@@ -6,7 +6,7 @@ $dbname="dbs";
 $mysqli=new mysqli($servername,$username,$password,$dbname);
 
 
-//$sql="UPDATE `tbl_cv` SET `cv_Fname` = 'fgh', `cv_Lname` = 'jkl', `cv_Eid` = 'bnm' WHERE `tbl_cv`.`cv_id` = 6";
+$sql="UPDATE `tbl_cv` SET `cv_Fname` = 'fgh', `cv_Lname` = 'jkl', `cv_Eid` = 'bnm' WHERE `tbl_cv`.`cv_id` = 6";
 
 
 if($es=mysqli_query($mysqli,$sql)) { 
