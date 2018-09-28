@@ -1,0 +1,103 @@
+<html>
+<head>
+    <title></title>
+<body>
+
+     <form name="MyForm"  action="loginform.html" method="post" onsubmit="return validate()">
+           <table border="1">
+                  <tr>
+                      <td>
+                          <label>FirstName</label>
+                          <input type="text" name="firstname" >
+                          <span id="erName">*</span>
+                      </td>
+                  </tr>
+                  <tr>
+                        <td>
+                            <label>LastName</label>
+                            <input type="text" name="lastname">
+                            <span id="erLastname">*</span>
+                        </td>   
+                    </tr>
+                    <tr>
+                            <td>
+                                <label>EmailId</label>
+                                <input type="text" name="emailid" >
+                                <span id="erEmailid">*</span>
+                            </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                    <label>Password</label>
+                                    <input type="text" name="password" >
+                                    <span id="erPassword">*</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                    <td>
+                                       
+                                        <input type="submit" value="submit" >
+                                        
+
+                                    </td>
+                                </tr>
+           </table>
+
+    
+
+
+     </form>
+
+<script>
+    
+function validate() 
+{
+    var firstname = document.forms["MyForm"]["firstname"].value;
+    var lastName  = document.forms["MyForm"]["lastname"].value;
+    var emailid = document.forms["MyForm"]["emailid"].value;
+    var password = document.forms["MyForm"]["password"].value;
+        
+var err=0;
+
+
+    if (firstname == "") 
+    {
+        document.getElementById("erName").innerHTML="fname is requered";
+        
+           err=1;  
+    }   
+     if(lastName=="")
+     {
+         document.getElementById("erLastname").innerHTML="lname is requered";
+         err=1;
+     }
+     if(emailid=="")
+     {
+         document.getElementById("erEmailid").innerHTML="emailid is requered";
+         err=1;
+     }
+     if(password=="")
+     {
+         document.getElementById("erPassword").innerHTML="password is requered";
+         err=1;
+     }
+
+
+
+
+
+     if(err==1)
+
+      {
+    return false;
+      }
+      document.getElementById("firstname").innerHTML="";
+      document.getElementById("lastname").innerHTML="";
+      document.getElementById("emailid").innerHTML="";
+      document.getElementById("password").innerHTML="";
+return true;
+}
+</script>
+</body>
+</head>
+</html>
