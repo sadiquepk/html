@@ -1,6 +1,6 @@
 <?php
 
-$link = mysqli_connect('localhost','root','','db_form');
+$link = mysqli_connect('localhost','root','','db_register');
 if($link)
 {
     echo '';

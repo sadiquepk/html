@@ -29,14 +29,14 @@
                         <tr>
                                 <td>
                                     <label>Password</label>
-                                    <input type="text" name="password" >
+                                    <input type="password" name="password" >
                                     <span id="erPassword">*</span>
                                 </td>
                             </tr>
                             <tr>
                                     <td>
                                        
-                                        <input type="submit" value="submit" >
+                                        <input type="submit" value="submit">
                                         
 
                                     </td>
@@ -52,10 +52,12 @@
     
 function validate() 
 {
+    
     var firstname = document.forms["MyForm"]["firstname"].value;
     var lastName  = document.forms["MyForm"]["lastname"].value;
     var emailid = document.forms["MyForm"]["emailid"].value;
     var password = document.forms["MyForm"]["password"].value;
+    
         
 var err=0;
       document.getElementById("erName").innerHTML="";
@@ -84,7 +86,7 @@ var err=0;
          document.getElementById("erPassword").innerHTML="password is requered";
          err=1;
      }
-
+    
 
 
 
