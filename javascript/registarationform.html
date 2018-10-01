@@ -58,7 +58,10 @@ function validate()
     var password = document.forms["MyForm"]["password"].value;
         
 var err=0;
-
+      document.getElementById("erName").innerHTML="";
+      document.getElementById("erLastname").innerHTML="";
+      document.getElementById("erEmailid").innerHTML="";
+      document.getElementById("erPassword").innerHTML="";
 
     if (firstname == "") 
     {
@@ -91,11 +94,8 @@ var err=0;
       {
     return false;
       }
-      document.getElementById("firstname").innerHTML="";
-      document.getElementById("lastname").innerHTML="";
-      document.getElementById("emailid").innerHTML="";
-      document.getElementById("password").innerHTML="";
-return true;
+   
+    return true;
 }
 </script>
 </body>
