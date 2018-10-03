@@ -2,13 +2,13 @@
     <head>
         <title>LOG IN FORM</title>
     <body>
-          <form>
+        <form name="MyForm"  action="loginform.html" method="post" onsubmit="return myFunction()">
               <table border="1">
                  
                     <tr>
                         <td>
                             <label>username</label>
-                            <input type="USER ID" name="USERID">
+                            <input type="text" name="username">
                         </td>
                     </tr>
                     <tr>
@@ -27,8 +27,24 @@
 
           <script>
                 function myFunction() {
-                    alert("Please fill it!");
+
+var USERID = document.forms["MyForm"]["username"].value;
+var err=0;
+      document.getElementById("erName").innerHTML="";
+
+                    if (USERID == "") {
+        document.getElementById("username").innerHTML="userid is requered";
+        
+           err=1;  
                 }
+             
+     if(err==1)
+
+{
+return false;
+}
+
+return true;
                 </script>
 
     </body>
