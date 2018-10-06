@@ -17,7 +17,7 @@
       
         <nav class="navbar  navbar-dark bg-dark  navbar-expand-lg fixed-top">
             
-            <h2 class="navbar-brand">Start Bootstrap</h2>
+            <h2 class="navbar-brand">STARTBOOTSTRAP</h2>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,7 +32,7 @@
            </ul> 
            </div>   
   </nav>
- <div style="background-image:url('qq.jpg');background-size:cover;" class="text-center py-5">
+ <div style="background-image:url('.jpg');background-size:cover;" class="text-center py-5">
  <p class="py-5 my-5  text-primary  display-1 " >MY BLOG IS START</p></div> 
  
 </div>
@@ -40,13 +40,7 @@
     <div class="row">
      <div class="col-lg-6 border text-center border-dark"><h1>Type here to search</h1></div>
      <div class="col-lg-6 border border-danger"><h1>Type here to search</h1></div>
-
-
     </div>
-
-
-
-
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
